@@ -1,92 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo de Derick - Blog</title>
-    </style>
+    <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #9e0b86; /* Azul escuro profundo para o fundo da página */
+            background-color: #9e0b86; /* Fundo geral da página */
             margin: 0;
             padding: 20px;
-            color: #000000; /* Texto geral em branco para contrastar com o fundo */
+            color: #000000;
         }
+
         header {
-            background-color: #6b0c91; /* Outro tom de azul escuro para o cabeçalho */
-            color: #ae07ba; /* Um tom claro para o texto do topo se destacar */
+            background-color: #6b0c91; /* Cor do cabeçalho */
+            color: #ae07ba; /* Cor do texto no cabeçalho */
             text-align: center;
             max-width: 800px;
             margin: 0 auto;
             padding: 24px 16px;
-            border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
-            border-bottom: 3px solid #231d8c; /* Linha divisória em verde escuro */
+            border-radius: 8px 8px 0 0;
+            border-bottom: 3px solid #231d8c;
         }
+
         main {
-            background-color: #080545; /* azul escuro para o corpo do blog */
-            color: #a31262; /* Texto claro para leitura confortável sobre o verde */
+            background-color: #080545; /* Fundo do corpo principal */
+            color: #a31262; /* Cor do texto do blog */
             max-width: 800px;
             margin: 0 auto;
             padding: 24px;
-            border-radius: 0 0 8px 8px; /* Bordas arredondadas embaixo */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
-        .container-perfil {
+
+        article {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 16px;
-            margin-bottom: 24px;
-            border-bottom: 1px solid #1d71ad; /* Linha sutil de divisão */
+            border-bottom: 1px solid #1d71ad;
             padding-bottom: 16px;
+            margin-bottom: 24px;
         }
+
         img {
             width: 80px;
             height: 80px;
-            border-radius: 50%; /* Foto de perfil redonda */
-            border: 3px solid #1bb3d1; /* Borda azul escuro na imagem */
+            border-radius: 50%; /* Imagem circular de perfil */
+            border: 3px solid #1bb3d1;
             object-fit: cover;
+            flex-shrink: 0;
         }
+
         h1, h2 {
             margin: 0;
         }
+
         h2 {
-            color:#56c9d1; /* Título interno em branco */
+            color: #56c9d1;
             margin-bottom: 4px;
         }
-        .autor {
-            color: #398f61; /* Nome do autor em um verde bem clarinho */
+
+        .artigo-autor {
+            color: #398f61;
+            font-weight: bold;
             font-size: 0.95em;
-            margin: 0;
+            margin: 0 0 12px 0;
         }
+
         p {
             line-height: 1.6;
             font-size: 1.05em;
         }
+
+        button {
+            cursor: pointer;
+            padding: 8px 14px;
+            margin-right: 8px;
+            margin-top: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #1d71ad;
+            color: #ffffff;
+            font-weight: bold;
+        }
     </style>
 </head>
+
 <body>
+    <header>
+        <h1>O Universo de Derick</h1>
+        <p>Explorando os mistérios do espaço, o mundo dos animes e o universo dos jogos!</p>
+    </header>
 
-<header>
-    <h1>O Universo de Derick</h1>
-    <p>Explorando os mistérios do espaço, o mundo dos animes e o universo dos jogos!</p>
-</header>
+    <main>
+        <article>
+            <img src="Derickverso.png"
+                alt="Logotipo circular estilizado em tons de azul escuro e verde escuro do Universo de Derick, mostrando elementos do espaço sideral, estrelas e silhuetas de jogos e animes.">
+            <div>
+                <h2>Bem-Vindos ao Meu Espaço!</h2>
+                <p class="artigo-autor">Por: Derick</p>
+                <p>Fala, galera! Sejam muito bem-vindos ao meu blog! Criei este espaço — agora com essa combinação única entre o azul escuro do cosmos e o verde escuro — para ser o nosso ponto de encontro oficial para falar sobre três das minhas maiores paixões: <strong>animes, astronomia e games</strong>.</p>
+                <p>Por aqui, vou soltar as melhores indicações de séries, trazer curiosidades fascinantes sobre o espaço sideral e comentar os principais lançamentos e novidades do mundo dos jogos. Tudo isso de um jeito leve, sincero e direto ao ponto.</p>
+                <p>Fiquem à vontade para debater nos comentários e me contem logo de cara: vocês preferem uma boa maratona de anime, explorar um novo jogo ou passar horas olhando para as estrelas? 🌌🎮✨</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+    </main>
 
-<main>
-    <img src="imagem.png" alt="imagem em estilo de pixel art com um espaço com um buraco negro com bordas azul e vermelo com um astronauta na frente dele."> 
-    <div class="container-perfil">
-        <img src="Derickverso.png" alt="Logotipo circular estilizado em tons de azul escuro e verde escuro do Universo de Derick, mostrando elementos do espaço sideral, estrelas e silhuetas de jogos e animes.">
-        <div>
-            <h2>Bem-Vindos ao Meu Espaço!</h2>
-            <p class="autor">Por: Derick</p>
-        </div>
-    </div>
-    
-    <p>Fala, galera! Sejam muito bem-vindos ao meu blog! Criei este espaço — agora com essa combinação única entre o azul escuro do cosmos e o verde escuro — para ser o nosso ponto de encontro oficial para falar sobre três das minhas maiores paixões: <strong>animes, astronomia e games</strong>.</p>
-    
-    <p>Por aqui, vou soltar as melhores indicações de séries, trazer curiosidades fascinantes sobre o espaço sideral e comentar os principais lançamentos e novidades do mundo dos jogos. Tudo isso de um jeito leve, sincero e direto ao ponto.</p>
-    
-    <p>Fiquem à vontade para debater nos comentários e me contem logo de cara: vocês preferem uma boa maratona de anime, explorar um novo jogo ou passar horas olhando para as estrelas? 🌌🎮✨</p>
-</main>
+    <script>
+        const botoes = document.querySelectorAll("button");
 
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false){
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>
